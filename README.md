@@ -19,4 +19,4 @@ Como Usar
 
 Para usar o aplicativo:
 
-    Selecione o gráfico que deseja visualizar.
+    Selecione o checkbox do gráfico que deseja visualizar.
