@@ -17,6 +17,4 @@ O aplicativo oferece as seguintes funcionalidades:
 
 Como Usar
 
-Para usar o aplicativo:
-
-    Selecione o checkbox do gráfico que deseja visualizar.
+Selecione o checkbox do gráfico que deseja visualizar.

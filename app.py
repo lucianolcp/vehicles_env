@@ -2,13 +2,19 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+# Definir o título do aplicativo
+st.title('Análise de Dados de Veículos')
+
+# Adicionar uma descrição sobre a seleção de gráficos
+st.write('Selecionar o(s) gráfico(s) que deseja visualizar:')
+
 # Carregar os dados do CSV
 df = pd.read_csv('vehicles_us.csv')
 
 # Criar caixas de seleção para escolher o tipo de gráfico
 build_histogram = st.checkbox('Criar um histograma')
 build_scatter = st.checkbox('Criar um gráfico de dispersão')
-build_bar_chart = st.checkbox('Criar um gráfico de Tipos por Fabricantes')
+build_bar_chart = st.checkbox('Criar um gráfico de barras')
 
 if build_histogram:  # se a caixa de seleção do histograma for selecionada
     # Escrever uma mensagem
@@ -46,7 +52,7 @@ if build_bar_chart:  # se a caixa de seleção do gráfico de barras for selecio
     fig_bar = px.bar(df_grouped, x='manufacturer', y='count', color='type',
                      labels={'manufacturer': 'Fabricante',
                              'count': 'Contagem', 'type': 'Tipo de Veículo'},
-                     title='Contagem de Tipos de Veículos por Fabricante')
+                     title='Contagem de Tipos de veículos por Fabricante')
 
     # Exibir o gráfico de barras
     st.plotly_chart(fig_bar, use_container_width=True)
