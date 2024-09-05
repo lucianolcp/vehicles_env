@@ -18,3 +18,8 @@ O aplicativo oferece as seguintes funcionalidades:
 Como Usar
 
 Selecione o checkbox do gráfico que deseja visualizar.
+
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE.txt) para detalhes.
